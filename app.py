@@ -60,7 +60,7 @@ def index():
 		app.vars['name'] = request.form['name']
 		print(app.vars)
 
- 
+
 @app.route('/about2', methods = ['GET', 'POST'])
 def about2():
 	try:
