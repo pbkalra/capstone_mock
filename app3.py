@@ -9,8 +9,8 @@ import random
 
 
 import networkx as nx
-with open('myedgelist_lines.txt', 'r') as filehandle:
-    myedgelist = [current_place.rstrip(',').rstrip() for current_place in filehandle.readlines()]
+with open('small_net_edgelines.txt', 'r') as filehandle:
+    myedgelist = [current_place.rstrip(', ').rstrip() for current_place in filehandle.readlines()]
 list_of_tuples = list()
 for i in range(len(myedgelist)):
     list_of_tuples.append(tuple(myedgelist[i].strip().split(',')[:2]))
@@ -72,6 +72,8 @@ def about2():
 def results():
 	start_point = 'Muffie Potter Aston' #request.form['R1']
 	tnum = random.randint(0,19)
+	snum = random.randint(0,19)
+	start_point = poplist2[snum]
 	target1 = poplist2[tnum]
 	source1 = start_point
 	mypath = findpath(mygraph, start_point, target1)
