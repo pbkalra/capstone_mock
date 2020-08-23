@@ -46,7 +46,7 @@ def findpath(graph, x,y):
         #print('You are connected to', y, ' within ', len(path), 'degrees')
         #print(path)
         	return path
-    	except nx.exception.NetworkXNoPath: 
+	except nx.exception.NetworkXNoPath: 
         path = 'There is no direct path--try cold calling!'
 		return path
 
@@ -63,7 +63,7 @@ def index():
  
 @app.route('/about2', methods = ['GET', 'POST'])
 def about2():
-  	try:
+	try:
 		return render_template('about2.html', name = request.form['name_lulu'], yf = request.form['source_field'], cf = request.form['destination_field'], ra = request.form['topic'])
 	except KeyError:
 		return render_template('about2.html', name = 'no name')
