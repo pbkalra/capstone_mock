@@ -47,7 +47,7 @@ def findpath(graph, x,y):
         #print(path)
         	return path
 	except nx.exception.NetworkXNoPath: 
-        path = 'There is no direct path--try cold calling!'
+	        path = 'There is no direct path--try cold calling!'
 		return path
 
 
