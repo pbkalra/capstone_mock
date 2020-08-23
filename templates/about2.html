@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head>
+d  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
     <meta name="author" content="@gotoariel">
     <!-- <link rel="icon" href="favicon.ico"> -->
 
-    <title>Results 1</title>
+    <title>Pick starting point</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,12 +17,20 @@
       <div class="row">
         <div class="col-lg-12 text-left">
           <h2>Results for {{name}}</h2>
-	  <p>Your field is {{yf}} </p>
-          <p>Your collaborator's field is {{cf}} </p>
+	  <p>Your collaborator's field is {{cf}} </p>
 	  <p>Your research area is {{ra}} </p>
-		<p><a href="/">Go Back</a></p>
-	<p><a href="results"> NEXT </a> </p>	
+		<p>Which of these researchers is closest to you/your work? </p>
+		<form action='results'>
+		<input type="radio" id="R1" name="start_node" value="R1">
+		<label for="R1">Alexandra Lebenthal</label><br>
+		<input type="radio" id="R2" name="start_node" value="R2">
+		<label for="R2">Lucia Hwong Gordon</label><br>
+		<input type="radio" id="R3" name="start_node" value="R3">
+		<label for="R3">Muffie Potter Aston</label><br>
+</form>
+		<p><a href="results">Go to results</a></p>
 
+		<p><a href="/">Go Back</a></p>
         </div>
       </div>
     </div>
@@ -33,3 +41,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
+
