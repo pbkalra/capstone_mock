@@ -49,7 +49,6 @@ def find_authors(area, method):
 
 @app.route('/about2', methods = ['GET', 'POST'])
 def about2():
-	
 	app.vars['name'] = request.form['name_lulu']
 	app.vars['yf'] = request.form['source_field']
 	app.vars['yf2'] = request.form['source_field2']
@@ -61,15 +60,22 @@ def about2():
 		source_nodes = [1, 2, 3]
 	if not target_nodes:
 		target_nodes = [4,5,6]
-
+	app.vars['source_nodes'] = source_nodes
+	app.vars['target_nodes'] = target_nodes
+	app.vars['R1'] = source_nodes[0]
+	app.vars['R2'] = source_nodes[1]
+	app.vars['R3'] = source_nodes[2]
 	try:
-	
-		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'], myR1=source_nodes[0], myR2=source_nodes[1], myR3=source_nodes[2], myC1=target_nodes[0], myC2=target_nodes[1], myC3=target_nodes[2])
-						
+		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'],  myR1=app.vars['source_nodes'][0], myR2=app.vars['source_nodes'][1], myR3=app.vars['R1'], myC1=target_nodes[0], myC2=target_nodes[1], myC3=target_nodes[2])
 	except KeyError:
 		print('KeyError')
 		return render_template('about3.html', name = 'no name')
-
+	
+	if request.method=='POST':
+		app.vars['start_node'] = request.form['my_start_node']
+ 
+	
+	
 
 
 def findpath(graph, x,y):
@@ -86,18 +92,21 @@ def findpath(graph, x,y):
 
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
-	start_node = request.form['start_node']
-	print(start_node)
-	target_node = request.form['target_node']
-	print(target_node)
-	target1 = 'Booth_JR'
-	mypath = findpath(mygraph, start_node, target_node)
-	try:
-		return render_template('results.html', out_1 = target_node, mypath = mypath, num_nodes = len(mypath))
-	except KeyError:
-		return render_template('results.html', out_1 = target1, mypath = mypath, num_nodes = "Oops: key error")
-	except TypeError:
-		return render_template('results.html', out_1 = target1, mypath = target, num_nodes = ("Oops: type error", source1))
+	if request.method=='POST':	
+		app.vars['start_node'] = request.form['my_start_node']
+		target_node = request.form['target_node']
+		target1 = 'Booth_JR'
+		mypath = findpath(mygraph, app.vars['my_start_node'], app.vars['target_node'])	
+		try:
+			return render_template('results.html', out_1 = target_node, mypath = mypath, num_nodes = len(mypath))
+		except KeyError:
+			return render_template('results.html', out_1 = target1, mypath = mypath, num_nodes = "Oops: key error")
+		except TypeError:
+			return render_template('results.html', out_1 = target1, mypath = target, num_nodes = ("Oops: type error", source1))
+		
+	if request.method=='GET':
+		return(render_template('results.html', out_1='BOOTH_JR', mypath='GET', num_nodes = 'GET'))
+
 
 if __name__ == '__main__':
 	app.run(port=8000, debug=True)

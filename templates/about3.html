@@ -21,24 +21,24 @@
 
 	  <p>Your research area is {{ra}} </p>
 		<p> <label for="start_node"> Which of these researchers is closest to you/your work? (start node)</label></p>
-		<select name="start_node", id="starts">
-		<option value="R1">{{myR1}}</option><br>
-		<option value="R2">{{myR2}}</option><br>
-		<option value="R3">{{myR3}}</option><br>
+		<select name="my_start_node", id="start_node">
+		<option value={{myR1}}>{{myR1}}</option><br>
+		<option value={{myR2}}>{{myR2}}</option><br>
+		<option value={{myR3}}>{{myR3}}</option><br>
 </select>
-</form>
-<form action='results'>
 <p><label for="target_node">Choose a potential collaborator</label></p>
-		<select name="target_node", id="target">
-		<option value="C1">{{myC1}}</option><br>
-		<option value="C2">{{myC2}}</option><br>
-		<option value="C3">{{myC3}}</option><br>
+		<select name="target_node", id="target_node">
+		<option value={{myC1}}>{{myC1}}</option><br>
+		<option value={{myC2}}>{{myC2}}</option><br>
+		<option value={{myC3}}>{{myC3}}</option><br>
 
 
 </select>
+<br>
+		<input type='submit' value='submit'/>
 
 </form>
-		<p><a href="results">Go to results</a></p>
+<br>
 
 		<p><a href="userinfo">Go Back</a></p>
         </div>
