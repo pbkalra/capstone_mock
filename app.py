@@ -93,7 +93,7 @@ def findpath(graph, x,y):
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
 	if request.method=='POST':	
-		app.vars['start_node'] = request.form['my_start_node']
+		app.vars['start_node'] = request.form['start_node']
 		target_node = request.form['target_node']
 		target1 = 'Booth_JR'
 		mypath = findpath(mygraph, app.vars['my_start_node'], app.vars['target_node'])	
@@ -104,7 +104,7 @@ def results():
 		except TypeError:
 			return render_template('results.html', out_1 = target1, mypath = target, num_nodes = ("Oops: type error", source1))
 		
-	if request.method=='GET':
+	elif request.method=='GET':
 		return(render_template('results.html', out_1='BOOTH_JR', mypath='GET', num_nodes = 'GET'))
 
 
