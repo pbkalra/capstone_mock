@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Introduction</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>MBE Matchmaker: Project Description</h2>
+<p>Broad view</p>
+	<p>Increasingly, researchers and funders are recognizing the importance of interdisciplinary research.  In addition to training interdisciplinary researchers, forming collaborations between researchers from different disciplines is a way to facilitate interdisciplinary research.  However, because of the traditional silo-ing of researchers within disciplines, it may be difficult for researchers to identify potential collaborators.
+	One emerging area of interdisciplinary research is “Educational Neuroscience” or “Mind, Brain, and Education” (MBE) (add links here to IMBES and/or definition of MBE).  The MBE matchmaker tool is designed to help researchers in any area of MBE identify collaborators in different disciplines.
+</p>
+<p>Data and techniques used</p>
+<p>	The data that went into creating MBE Matchmaker comes from searches of PubMed and Web of Science for conjunctions of search terms.  PubMed has an easily accessible API (link) from which text or xml files can be returned and parsed.  Web of Science’s API exists but access is limited.  However, WoS search results can be saved as html files, which can then be parsed.  Natural language processing methods were used to identify research disciplines based on their department affiliations.  
+The data was then used to create a network (or graph) model where nodes are researchers and edges are co-authored papers.  To use the matchmaker tool, a user selects their discipline, area of study, and desired discipline of a potential collaborator.  The matchmaker then offers the user options for a start node: a researcher within the network who is similar to the user.  Based on the selection of start node, the matchmaker calculates the path from the start node to the node of a potential collaborator (a researcher in the network who matches the research area and collaborator discipline criteria).
+</p>
+<p>Expected impact/results</p>
+	<p>In addition to individual searchers for potential collaborators, the network model under the MBE matchmaker can be examined to identify areas where there have been many successful collaborations already, as well as areas which are due for new collaborations.  The successful collaborations can be studied to identify factors that might predict success, and the sparsely collaborated areas can be targeted by funders and researchers for new approaches.
+ </p>
+
+<a href = "graph"> Go to Interactive Visualization </a>
+<p></p>
+
+<a href = "userinfo"> Go to Matchmaker Tool</a>	
+
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

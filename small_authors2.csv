@@ -1,0 +1,368 @@
+,first name,all_keywords,eeg,fmri,reading,math,count,keynames
+Suárez-Pellicioni_M,Macarena,"['arithmetic', 'children', 'fMRI', 'fluency', 'longitudinal', 'subtraction']",0,0,0,1,5,Suárez-Pellicioni_M
+Berteletti_I,Ilaria,"['arithmetic', 'children', 'fMRI', 'fluency', 'longitudinal', 'subtraction']",0,0,1,1,19,Berteletti_I
+Booth_JR,James R,"['arithmetic', 'children', 'fMRI', 'fluency', 'longitudinal', 'subtraction']",0,0,1,1,101,Booth_JR
+Sella_F,Francesco,"['Counting', 'Number comparison', 'Number line', 'Numerical skills', 'Preschool children', 'Spatial mapping']",0,0,0,1,3,Sella_F
+Lucangeli_D,Daniela,"['Counting', 'Number comparison', 'Number line', 'Numerical skills', 'Preschool children', 'Spatial mapping']",0,0,0,1,5,Lucangeli_D
+Zorzi_M,Marco,"['Counting', 'Number comparison', 'Number line', 'Numerical skills', 'Preschool children', 'Spatial mapping']",0,0,0,1,8,Zorzi_M
+Piazza_M,Manuela,[],0,0,0,1,1,Piazza_M
+Facoetti_A,Andrea,[],0,0,0,1,0,Facoetti_A
+Trussardi_AN,Anna Noemi,[],0,0,0,1,0,Trussardi_AN
+Conte_S,Stefano,[],0,0,0,1,0,Conte_S
+Dehaene_S,Stanislas,[],0,0,0,1,2,Dehaene_S
+Mou_Y,Yi,"['Approximate number system', 'Bayes factor', 'Counting', 'Early symbolic number knowledge', 'Executive function', 'Numerical cognition']",0,0,0,1,1,Mou_Y
+Hyde_DC,Daniel C,"['Approximate number system', 'Bayes factor', 'Counting', 'Early symbolic number knowledge', 'Executive function', 'Numerical cognition']",0,0,0,1,2,Hyde_DC
+Lanfranchi_S,Silvia,"['Down syndrome', 'Number-line estimation', 'Numerical cognition']",0,0,0,1,0,Lanfranchi_S
+Torrisi_E,Erika,"['Down syndrome', 'Number-line estimation', 'Numerical cognition']",0,0,0,1,0,Torrisi_E
+Vianello_R,Renzo,"['Down syndrome', 'Number-line estimation', 'Numerical cognition']",0,0,0,1,0,Vianello_R
+Knops_A,André,"['Approximate number system', 'Attention', 'Mental number line', 'Operational momentum', 'Weber fraction']",0,0,0,1,0,Knops_A
+Khanum_S,Saeeda,[],0,0,0,1,0,Khanum_S
+Hanif_R,Rubina,[],0,0,0,1,0,Hanif_R
+Spelke_ES,Elizabeth S,[],0,0,0,1,0,Spelke_ES
+Simon_CE,Charline E,[],0,0,0,1,0,Simon_CE
+Bonato_M,Mario,[],0,0,0,1,0,Bonato_M
+Umiltà_C,Carlo,[],0,0,0,1,0,Umiltà_C
+Prado_J,Jérôme,"['Arithmetic', 'Dyscalculia', 'Learning disability', 'Multiplication', 'fMRI']",0,0,1,1,11,Prado_J
+Hubbard_EM,Edward M,[],0,0,0,1,0,Hubbard_EM
+Zhou_X,Xinlin,[],0,0,1,1,1,Zhou_X
+Lu_J,Jiayan,[],0,0,1,1,1,Lu_J
+Zhao_H,Hui,[],0,0,0,1,0,Zhao_H
+Butterworth_B,Brian,[],0,0,0,1,0,Butterworth_B
+Chen_C,Chuansheng,[],0,0,0,1,0,Chen_C
+Dong_Q,Qi,[],0,0,1,1,1,Dong_Q
+Younger_JW,Jessica W,"['functional magnetic resonance imaging', 'lateralization', 'maternal education', 'phonological awareness', 'socioeconomic status']",0,0,0,1,3,Younger_JW
+Lee_KW,Keun-Woo,"['functional magnetic resonance imaging', 'lateralization', 'maternal education', 'phonological awareness', 'socioeconomic status']",0,0,0,1,0,Lee_KW
+Demir-Lira_OE,Ozlem E,"['functional magnetic resonance imaging', 'lateralization', 'maternal education', 'phonological awareness', 'socioeconomic status']",0,0,0,1,0,Demir-Lira_OE
+Randazzo Wagner_M,Melissa,"['parietal lobes', 'reading intervention', 'rhyming', 'sight word efficiency', 'transcranial direct current stimulation']",0,0,0,1,0,Randazzo Wagner_M
+Wise Younger_J,Jessica,"['Dorsal stream', 'Functional magnetic resonance imaging', 'Reading development', 'Reading network connectivity', 'Structural equation modeling', 'Ventral stream']",0,0,0,1,0,Wise Younger_J
+Tucker-Drob_E,Elliot,"['Dorsal stream', 'Functional magnetic resonance imaging', 'Reading development', 'Reading network connectivity', 'Structural equation modeling', 'Ventral stream']",0,0,0,1,0,Tucker-Drob_E
+Weiss_Y,Yael,"['children', 'fMRI', 'phonology', 'semantics', 'specialization']",0,0,0,1,1,Weiss_Y
+Cweigenberg_HG,Hannah G,"['children', 'fMRI', 'phonology', 'semantics', 'specialization']",0,0,0,1,0,Cweigenberg_HG
+Wang_J,Jin,"['Access', 'Grain size', 'Onset', 'Phonology', 'Refinement', 'Representation', 'Rhyme', 'Scaffolding']",0,0,0,1,3,Wang_J
+Joanisse_MF,Marc F,"['Access', 'Grain size', 'Onset', 'Phonology', 'Refinement', 'Representation', 'Rhyme', 'Scaffolding']",0,0,1,1,2,Joanisse_MF
+Rice_ML,Mabel L,[],0,0,0,1,0,Rice_ML
+Deng_Y,Yuan,"['Chinese', 'Left ventral occipitotemporal cortex', 'Orthography', 'Phonology', 'Reading', 'Semantics']",0,0,1,1,5,Deng_Y
+Wang_JX,Jane X,[],0,0,0,1,0,Wang_JX
+Bartolotti_J,James,[],0,0,0,1,0,Bartolotti_J
+Amaral_LA,Luis A N,[],0,0,0,1,0,Amaral_LA
+Fuchs_L,Lynn,"['Arithmetic', 'Children', 'Longitudinal', 'Math', 'Phonological', 'fMRI']",0,0,0,1,0,Fuchs_L
+Lytle_M,Marisa,[],0,0,0,1,0,Lytle_M
+Smith_GJ,Gregory J,"['functional connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'longitudinal', 'neural connectivity', 'reading development', 'reading network']",0,0,0,1,0,Smith_GJ
+McNorgan_C,Chris,"['functional connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'longitudinal', 'neural connectivity', 'reading development', 'reading network']",0,0,1,1,9,McNorgan_C
+Randazzo_M,Melissa,"['audiovisual integration', 'crossmodal integration', 'dyslexia', 'fMRI—functional magnetic resonance imaging', 'phonemic awareness', 'reading difficulty']",0,0,1,1,0,Randazzo_M
+Greenspon_EB,Emma B,"['audiovisual integration', 'crossmodal integration', 'dyslexia', 'fMRI—functional magnetic resonance imaging', 'phonemic awareness', 'reading difficulty']",0,0,1,1,0,Greenspon_EB
+Mutreja_R,Rachna,[],0,0,1,1,2,Mutreja_R
+Liu_L,Li,"['arithmetic', 'education', 'fMRI', 'multiplication', 'problem-size']",0,0,1,1,11,Liu_L
+Chadha_A,Angad,[],0,0,1,1,0,Chadha_A
+Zhang_H,Hongchuan,[],0,0,1,1,0,Zhang_H
+Mehta_R,Rucha,[],0,0,1,1,0,Mehta_R
+Desroches_AS,Amy S,[],0,0,1,1,3,Desroches_AS
+Minas_JE,Jennifer E,[],0,0,1,1,0,Minas_JE
+Chabal_S,Sarah,"['Activation likelihood estimate', 'Lexical decision', 'Naming', 'Parallel distributed processing', 'Psycholinguistics', 'fMRI']",0,0,1,1,0,Chabal_S
+O'Young_D,Daniel,"['Activation likelihood estimate', 'Lexical decision', 'Naming', 'Parallel distributed processing', 'Psycholinguistics', 'fMRI']",0,0,1,1,0,O'Young_D
+Lukic_S,Sladjana,"['Activation likelihood estimate', 'Lexical decision', 'Naming', 'Parallel distributed processing', 'Psycholinguistics', 'fMRI']",0,0,1,1,0,Lukic_S
+Randazzo-Wagner_M,Melissa,"['audiovisual integration', 'developmental disorder', 'dyslexia', 'functional MRI', 'learning disability', 'reading development']",0,0,1,1,0,Randazzo-Wagner_M
+Awati_N,Neha,"['audiovisual integration', 'cross-modal', 'development', 'fMRI', 'reading']",0,0,1,1,1,Awati_N
+Alvarez_A,Aubrey,[],0,0,1,1,0,Alvarez_A
+Bhullar_A,Annum,[],0,0,1,1,0,Bhullar_A
+Gayda_J,Jessica,[],0,0,1,1,1,Gayda_J
+Mathieu_R,Romain,"['deductive reasoning', 'development', 'fMRI', 'linear relations', 'set-inclusion relations']",0,0,1,1,0,Mathieu_R
+Malins_JG,Jeffrey G,"['Development', 'ERPs', 'Incremental processing', 'Lexical competition', 'Mandarin Chinese', 'Spoken word recognition', 'Top-down processing']",0,0,1,1,1,Malins_JG
+Gao_D,Danqi,"['Development', 'ERPs', 'Incremental processing', 'Lexical competition', 'Mandarin Chinese', 'Spoken word recognition', 'Top-down processing']",0,0,1,1,0,Gao_D
+Tao_R,Ran,"['Development', 'ERPs', 'Incremental processing', 'Lexical competition', 'Mandarin Chinese', 'Spoken word recognition', 'Top-down processing']",0,0,1,1,2,Tao_R
+Shu_H,Hua,"['Development', 'ERPs', 'Incremental processing', 'Lexical competition', 'Mandarin Chinese', 'Spoken word recognition', 'Top-down processing']",0,0,1,1,1,Shu_H
+Lytle_MN,Marisa N,"['ADHD', 'Children', 'FMRI', 'Feedback', 'Reward processing', 'Working memory']",0,0,1,1,2,Lytle_MN
+Hammer_R,Rubi,"['ADHD', 'Children', 'FMRI', 'Feedback', 'Reward processing', 'Working memory']",0,0,1,1,3,Hammer_R
+Bitan_T,Tali,"['Children', 'Development', 'Language', 'Reading', 'fMRI']",0,0,1,1,18,Bitan_T
+Luessi_M,Martin,"['Granger causality', 'causality', 'connectivity', 'fMRI', 'variational Bayesian method']",0,0,1,1,1,Luessi_M
+Babacan_SD,S Derin,"['Granger causality', 'causality', 'connectivity', 'fMRI', 'variational Bayesian method']",0,0,1,1,1,Babacan_SD
+Molina_R,Rafael,"['Granger causality', 'causality', 'connectivity', 'fMRI', 'variational Bayesian method']",0,0,1,1,1,Molina_R
+Katsaggelos_AK,Aggelos K,"['Granger causality', 'causality', 'connectivity', 'fMRI', 'variational Bayesian method']",0,0,1,1,1,Katsaggelos_AK
+Lonner_JH,Jess H,[],0,0,1,1,0,Lonner_JH
+Jasko_JG,Jeff G,[],0,0,1,1,0,Jasko_JG
+Bezwada_HP,Hari P,[],0,0,1,1,0,Bezwada_HP
+Booth_RE,Robert E,[],0,0,1,1,4,Booth_RE
+Li_Y,Yanyan,"['congenitally deaf', 'fMRI', 'meaning', 'reading', 'rhyming']",0,0,1,1,3,Li_Y
+Peng_D,Danling,"['congenitally deaf', 'fMRI', 'meaning', 'reading', 'rhyming']",0,0,1,1,7,Peng_D
+Ding_G,Guosheng,"['congenitally deaf', 'fMRI', 'meaning', 'reading', 'rhyming']",0,0,1,1,5,Ding_G
+Zang_Y,Yufeng,"['acquired deaf', 'congenitally deaf', 'functional connectivity', 'regional homogeneity', 'resting-state fMRI']",0,0,1,1,1,Zang_Y
+Li_J,Junhong,"['acquired deaf', 'congenitally deaf', 'functional connectivity', 'regional homogeneity', 'resting-state fMRI']",0,0,1,1,0,Li_J
+Yan_C,Chaogan,"['acquired deaf', 'congenitally deaf', 'functional connectivity', 'regional homogeneity', 'resting-state fMRI']",0,0,1,1,0,Yan_C
+Huang_R,Ruiwang,[],0,0,1,1,0,Huang_R
+Lv_Y,Yating,[],0,0,1,1,0,Lv_Y
+He_Y,Yong,[],0,0,1,1,0,He_Y
+Li_H,Hehui,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Li_H
+Bélanger_NN,Nathalie N,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Bélanger_NN
+Feng_X,Xiaoxia,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Feng_X
+Tian_M,Mengyu,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Tian_M
+Xie_W,Weiyi,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Xie_W
+Zhang_M,Manli,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Zhang_M
+Gao_Y,Yue,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,2,Gao_Y
+Ang_C,Chen,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Ang_C
+Yang_X,Xiujie,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Yang_X
+Meng_X,Xiangzhi,"['Brain structural abnormality', 'English as second language', 'Literacy difficulties', 'Mandarin-speaking children']",0,0,1,1,0,Meng_X
+Liu_X,Xin,"['connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'orthography', 'phonology', 'reading development', 'semantics']",0,0,1,1,0,Liu_X
+Di_Q,Qiqi,"['connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'orthography', 'phonology', 'reading development', 'semantics']",0,0,1,1,0,Di_Q
+Hu_J,Jiali,"['connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'orthography', 'phonology', 'reading development', 'semantics']",0,0,1,1,0,Hu_J
+Lu_C,Chunming,"['connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'orthography', 'phonology', 'reading development', 'semantics']",0,0,1,1,1,Lu_C
+Nan_Y,Yun,"['connectivity', 'functional magnetic resonance imaging (fMRI)', 'graph theory', 'orthography', 'phonology', 'reading development', 'semantics']",0,0,1,1,0,Nan_Y
+Wang_W,Wenjing,"['Chinese dyslexia', 'Functional magnetic resonance imaging (fMRI)', 'Morphological processing']",0,0,1,1,1,Wang_W
+You_W,Wenping,"['Chinese dyslexia', 'Functional magnetic resonance imaging (fMRI)', 'Morphological processing']",0,0,1,1,1,You_W
+Zhao_X,Xu,[],0,0,1,1,0,Zhao_X
+Deng_X,Xiaoxiang,[],0,0,1,1,0,Deng_X
+Cao_F,Fan,[],0,0,1,1,12,Cao_F
+Jin_Z,Zhen,[],0,0,1,1,2,Jin_Z
+Zeng_Y,Yawei,[],0,0,1,1,0,Zeng_Y
+Li_K,Ke,[],0,0,1,1,2,Li_K
+Zhu_L,Lei,[],0,0,1,1,0,Zhu_L
+Fan_N,Ning,[],0,0,1,1,1,Fan_N
+Bolger_DJ,Donald J,[],0,0,1,1,7,Bolger_DJ
+Lee_SH,Shu-Hui,"['Association strength', 'Connectivity', 'Longitudinal', 'Semantic', 'fMRI']",0,0,1,1,2,Lee_SH
+Chou_TL,Tai-Li,"['Association strength', 'Connectivity', 'Longitudinal', 'Semantic', 'fMRI']",0,0,1,1,12,Chou_TL
+Chen_SY,Shiou-Yuan,"['Age', 'Association strength', 'Auditory', 'Semantic', 'Visual', 'fMRI']",0,0,1,1,2,Chen_SY
+Cooke_GE,Gillian E,"['ADHD diagnosis', 'Feedback processing', 'Neurobiological marker', 'Reward processing', 'Visuospatial working memory']",0,0,1,1,1,Cooke_GE
+Stein_MA,Mark A,"['ADHD diagnosis', 'Feedback processing', 'Neurobiological marker', 'Reward processing', 'Visuospatial working memory']",0,0,1,1,1,Stein_MA
+Kloet_J,Jim,[],0,0,1,1,0,Kloet_J
+Tennekoon_M,Michael,"['ADHD', 'Executive functions', 'Feedback processing', 'Reward processing', 'Working memory']",0,0,1,1,0,Tennekoon_M
+Gullick_MM,Margaret M,[],1,0,1,1,3,Gullick_MM
+Demir-Lira_ÖE,Özlem Ece,[],0,0,1,1,2,Demir-Lira_ÖE
+Sun_Y,Yafeng,"['Bilingual', 'Occipito-temporal region', 'Proficiency', 'Visual word form']",0,0,1,1,0,Sun_Y
+Guo_T,Taomei,"['Bilingual', 'Occipito-temporal region', 'Proficiency', 'Visual word form']",0,0,1,1,0,Guo_T
+Edwards_ES,Erica S,[],0,0,1,1,0,Edwards_ES
+Burke_K,Kali,[],0,0,1,1,0,Burke_K
+Cone_NE,Nadia E,[],0,0,1,1,6,Cone_NE
+Burman_DD,Douglas D,[],0,0,1,1,18,Burman_DD
+Ding_GS,Guo-sheng,[],0,0,1,1,2,Ding_GS
+Peng_DL,Dan-ling,[],0,0,1,1,2,Peng_DL
+Demir_ÖE,Özlem Ece,[],0,0,1,1,1,Demir_ÖE
+Voss_JL,Joel L,"['Cognitive control', 'Development', 'Early-life stress', 'Prefrontal cortex', 'Resting-state fMRI']",0,0,1,1,0,Voss_JL
+O'Neil_JT,Jonathan T,"['Cognitive control', 'Development', 'Early-life stress', 'Prefrontal cortex', 'Resting-state fMRI']",0,0,1,1,0,O'Neil_JT
+Briggs-Gowan_MJ,Margaret J,"['Cognitive control', 'Development', 'Early-life stress', 'Prefrontal cortex', 'Resting-state fMRI']",0,0,1,1,0,Briggs-Gowan_MJ
+Wakschlag_LS,Lauren S,"['Cognitive control', 'Development', 'Early-life stress', 'Prefrontal cortex', 'Resting-state fMRI']",0,0,1,1,0,Wakschlag_LS
+Deirmengian_C,Carl,[],0,0,1,1,2,Deirmengian_C
+Kardos_K,Keith,[],0,0,1,1,1,Kardos_K
+Kilmartin_P,Patrick,[],0,0,1,1,1,Kilmartin_P
+Gulati_S,Simmi,[],0,0,1,1,0,Gulati_S
+Citrano_P,Patrick,[],0,0,1,1,0,Citrano_P
+Cameron_A,Alexander,[],0,0,1,1,0,Cameron_A
+Schiller_K,Kevin,[],0,0,1,1,0,Schiller_K
+Parvizi_J,Javad,[],0,0,1,1,0,Parvizi_J
+Hallab_N,Nadim,[],0,0,1,1,0,Hallab_N
+Tarabishy_A,Abdul,[],0,0,1,1,0,Tarabishy_A
+Della Valle_C,Craig,[],0,0,1,1,0,Della Valle_C
+Jacobs_JJ,Joshua J,[],0,0,1,1,0,Jacobs_JJ
+Lonner_J,Jess,[],0,0,1,1,0,Lonner_J
+Wong_CH,Ciao-Han,"['Association strength', 'Categorical relatedness', 'Development', 'Longitudinal']",0,0,1,1,0,Wong_CH
+Fan_LY,Li-Ying,"['Association strength', 'Categorical relatedness', 'Development', 'Longitudinal']",0,0,1,1,1,Fan_LY
+Chen_CW,Chih-Wei,"['association strength', 'children', 'developmental', 'functional magnetic resonance imaging', 'semantic']",0,0,1,1,1,Chen_CW
+Wu_MY,Mei-Yao,[],0,0,1,1,0,Wu_MY
+Bigio_JD,Jordan D,[],0,0,1,1,2,Bigio_JD
+Lu_D,Dong,[],0,0,1,1,7,Lu_D
+Yan_X,Xiaohui,[],0,0,1,1,1,Yan_X
+Zhou_H,Haiyan,[],0,0,1,1,0,Zhou_H
+Brennan_C,Christine,[],0,0,1,1,3,Brennan_C
+Perfetti_CA,Charles A,[],0,0,1,1,0,Perfetti_CA
+Khalid_K,Kainat,[],0,0,1,1,1,Khalid_K
+Lee_R,Rebecca,[],0,0,1,1,1,Lee_R
+Yang_Y,Yanhui,[],0,0,1,1,1,Yang_Y
+Xu_G,Guoqing,[],0,0,1,1,0,Xu_G
+Zaveri_R,Rishi,[],0,0,1,1,0,Zaveri_R
+Burns_LR,Lawton R,[],0,0,1,1,0,Burns_LR
+Housman_MG,Michael G,[],0,0,1,1,0,Housman_MG
+Koenig_A,Aaron,[],0,0,1,1,0,Koenig_A
+Minas_T,Taylor,[],0,0,1,1,0,Minas_T
+Pedroarena-Leal_N,Nicole,"['Chinese', 'English', 'cross-linguistic', 'development', 'orthography', 'phonology', 'rhyming', 'spoken language']",0,0,1,1,0,Pedroarena-Leal_N
+Mehdiratta_N,Nitin,[],0,0,1,1,0,Mehdiratta_N
+Cho_S,Soojin,[],0,0,1,1,0,Cho_S
+Wood_L,Lydia,[],0,0,1,1,0,Wood_L
+Houk_JC,James C,[],0,0,1,1,0,Houk_JC
+Harasaki_Y,Yasuaki,[],0,0,1,1,0,Harasaki_Y
+Bebko_G,Genna,[],0,0,1,1,0,Bebko_G
+Zhang_L,Lei,[],0,0,1,1,0,Zhang_L
+Minas_J,Jennifer,[],0,0,1,1,0,Minas_J
+Hornickel_J,Jane,[],0,0,1,1,0,Hornickel_J
+Blumenfeld_HK,Henrike K,[],0,0,1,1,0,Blumenfeld_HK
+Lifshitz_A,Adi,[],0,0,1,1,0,Lifshitz_A
+Breznitz_Z,Zvia,[],0,0,1,1,0,Breznitz_Z
+Cheon_J,Jimmy,[],0,0,1,1,1,Cheon_J
+Gitelman_DR,Darren R,[],0,0,1,1,1,Gitelman_DR
+Mesulam_MM,M-Marsel,[],0,0,1,1,1,Mesulam_MM
+Man_G,G,"['Arithmetic skill', 'Brain-behavior analysis', 'Children', 'Intraparietal sulcus', 'Number Line task', 'Numerical representation', 'Posterior superior parietal lobule', 'Single-digit subtraction', 'fMRI']",0,0,1,1,0,Man_G
+Wright_SB,Samantha B,"['analogy', 'brain', 'cognition', 'development', 'frontal', 'functional magnetic resonance imaging', 'hierarchy', 'relational']",0,0,1,1,1,Wright_SB
+Matlen_BJ,Bryan J,"['analogy', 'brain', 'cognition', 'development', 'frontal', 'functional magnetic resonance imaging', 'hierarchy', 'relational']",0,0,1,1,1,Matlen_BJ
+Baym_CL,Carol L,"['analogy', 'brain', 'cognition', 'development', 'frontal', 'functional magnetic resonance imaging', 'hierarchy', 'relational']",0,0,1,1,0,Baym_CL
+Ferrer_E,Emilio,"['analogy', 'brain', 'cognition', 'development', 'frontal', 'functional magnetic resonance imaging', 'hierarchy', 'relational']",0,0,1,1,6,Ferrer_E
+Bunge_SA,Silvia A,"['analogy', 'brain', 'cognition', 'development', 'frontal', 'functional magnetic resonance imaging', 'hierarchy', 'relational']",0,0,1,1,85,Bunge_SA
+Williams_A,Aya,[],0,0,1,1,0,Williams_A
+Uchikoshi_Y,Yuuko,[],0,0,1,1,1,Uchikoshi_Y
+Zhou_Q,Qing,[],0,0,1,1,1,Zhou_Q
+Whitfield-Gabrieli_S,Susan,[],0,0,1,1,0,Whitfield-Gabrieli_S
+Wendelken_C,Carter,[],0,0,1,1,29,Wendelken_C
+Nieto-Castañón_A,Alfonso,[],0,0,1,1,0,Nieto-Castañón_A
+Bailey_SK,Stephen Kent,[],0,0,1,1,1,Bailey_SK
+Anteraper_SA,Sheeba Arnold,[],0,0,1,1,0,Anteraper_SA
+Lee_YJ,Yoon Ji,[],0,0,1,1,0,Lee_YJ
+Chai_XQ,Xiao-Qian,[],0,0,1,1,0,Chai_XQ
+Hirshfeld-Becker_DR,Dina R,[],0,0,1,1,0,Hirshfeld-Becker_DR
+Biederman_J,Joseph,[],0,0,1,1,0,Biederman_J
+Cutting_LE,Laurie E,[],0,0,1,1,0,Cutting_LE
+Whitaker_KJ,Kirstie J,[],0,0,1,1,5,Whitaker_KJ
+Vendetti_MS,Michael S,[],0,0,1,1,4,Vendetti_MS
+Ghetti_S,Simona,"['fMRI', 'functional connectivity', 'longitudinal', 'reasoning', 'structural connectivity']",0,0,1,1,13,Ghetti_S
+Cutting_L,Laurie,"['fMRI', 'functional connectivity', 'longitudinal', 'reasoning', 'structural connectivity']",0,0,1,1,0,Cutting_L
+Lee_JK,Joshua K,"['connectivity', 'diffusion tensor imaging', 'fractional anisotropy', 'hippocampus', 'memory']",0,0,1,1,4,Lee_JK
+Pospisil_J,Jacqueline,"['connectivity', 'diffusion tensor imaging', 'fractional anisotropy', 'hippocampus', 'memory']",0,0,1,1,0,Pospisil_J
+Sastre_M,Marcos,"['connectivity', 'diffusion tensor imaging', 'fractional anisotropy', 'hippocampus', 'memory']",0,0,1,1,1,Sastre_M
+Ross_JM,Julia M,"['connectivity', 'diffusion tensor imaging', 'fractional anisotropy', 'hippocampus', 'memory']",0,0,1,1,0,Ross_JM
+Munakata_Y,Yuko,[],0,0,1,1,0,Munakata_Y
+Baym_C,Carol,[],0,0,1,1,0,Baym_C
+Souza_M,Michael,[],0,0,1,1,0,Souza_M
+O'Hare_ED,Elizabeth D,[],0,0,1,1,1,O'Hare_ED
+Chung_D,David,[],0,0,1,1,0,Chung_D
+Ditterich_J,Jochen,[],0,0,1,1,0,Ditterich_J
+Carter_CS,Cameron S,[],0,0,1,1,2,Carter_CS
+Nakhabenko_D,Denis,[],0,0,1,1,0,Nakhabenko_D
+Donohue_SE,Sarah E,[],0,0,1,1,6,Donohue_SE
+Wang_WC,Wei-Chun,[],0,0,1,1,0,Wang_WC
+Hsieh_LT,Liang-Tien,[],0,0,1,1,0,Hsieh_LT
+Swamy_G,Gowri,[],0,0,1,1,0,Swamy_G
+Starr_A,Ariel,"['analogical reasoning', 'eye movements', 'individual differences', 'problem solving strategies']",0,0,1,1,2,Starr_A
+Johnson_EL,Elizabeth L,"['analogical reasoning', 'eye movements', 'individual differences', 'problem solving strategies']",0,0,1,1,2,Johnson_EL
+Modavi_K,Kiana,"['analogical reasoning', 'eye movements', 'individual differences', 'problem solving strategies']",0,0,1,1,0,Modavi_K
+Lemos_CJ,Connor J,"['deductive', 'hemispheric specialization', 'reasoning', 'transitive inference']",0,0,1,1,0,Lemos_CJ
+van Leijenhorst_L,Linda,[],0,0,1,1,2,van Leijenhorst_L
+Crone_EA,Eveline A,[],0,0,1,1,9,Crone_EA
+Vaidya_CJ,Chandan J,[],0,0,1,1,1,Vaidya_CJ
+Dudukovic_NM,Nicole M,[],0,0,1,1,1,Dudukovic_NM
+Zalecki_CA,Christine A,[],0,0,1,1,0,Zalecki_CA
+Elliott_GR,Glen R,[],0,0,1,1,0,Elliott_GR
+Gabrieli_JD,John D E,[],0,0,1,1,5,Gabrieli_JD
+Tharp_JA,Jordan A,"['Tourette syndrome', 'anxiety', 'cognitive control', 'dopamine', 'executive functions', 'eye-blink rate', 'norepinephrine', 'pupillometry']",0,0,1,1,0,Tharp_JA
+Mathews_CA,Carol A,"['Tourette syndrome', 'anxiety', 'cognitive control', 'dopamine', 'executive functions', 'eye-blink rate', 'norepinephrine', 'pupillometry']",0,0,1,1,0,Mathews_CA
+Marco_EJ,Elysa J,"['Tourette syndrome', 'anxiety', 'cognitive control', 'dopamine', 'executive functions', 'eye-blink rate', 'norepinephrine', 'pupillometry']",0,0,1,1,0,Marco_EJ
+Schreier_H,Herbert,"['Tourette syndrome', 'anxiety', 'cognitive control', 'dopamine', 'executive functions', 'eye-blink rate', 'norepinephrine', 'pupillometry']",0,0,1,1,0,Schreier_H
+Souza_MJ,Michael J,[],0,0,1,1,0,Souza_MJ
+Selmeczy_D,Diana,"['DLPFC', 'Episodic memory', 'Hippocampus', 'Longitudinal', 'Puberty', 'Testosterone']",0,0,1,1,1,Selmeczy_D
+Fandakova_Y,Yana,"['DLPFC', 'Episodic memory', 'Hippocampus', 'Longitudinal', 'Puberty', 'Testosterone']",0,0,1,1,4,Fandakova_Y
+Grimm_KJ,Kevin J,"['DLPFC', 'Episodic memory', 'Hippocampus', 'Longitudinal', 'Puberty', 'Testosterone']",0,0,1,1,1,Grimm_KJ
+Paz-Alonso_PM,Pedro M,[],0,0,1,1,2,Paz-Alonso_PM
+Anderson_MC,Michael C,[],0,0,1,1,1,Anderson_MC
+Goodman_GS,Gail S,[],0,0,1,1,0,Goodman_GS
+Op de Macks_ZA,Zdena A,"['estradiol', 'fMRI', 'insula', 'puberty', 'social status']",0,0,1,1,1,Op de Macks_ZA
+Bell_ON,Orly N,"['estradiol', 'fMRI', 'insula', 'puberty', 'social status']",0,0,1,1,1,Bell_ON
+Kriegsfeld_LJ,Lance J,"['estradiol', 'fMRI', 'insula', 'puberty', 'social status']",0,0,1,1,1,Kriegsfeld_LJ
+Kayser_AS,Andrew S,"['estradiol', 'fMRI', 'insula', 'puberty', 'social status']",0,0,1,1,1,Kayser_AS
+Dahl_RE,Ronald E,"['estradiol', 'fMRI', 'insula', 'puberty', 'social status']",0,0,1,1,1,Dahl_RE
+Wilbrecht_L,Linda,"['Estradiol', 'Nucleus accumbens', 'Orbitofrontal cortex', 'Puberty', 'Testosterone', 'fMRI']",0,0,1,1,0,Wilbrecht_L
+Ochsner_KN,Kevin N,[],0,0,1,1,0,Ochsner_KN
+Gross_JJ,James J,[],0,0,1,1,0,Gross_JJ
+Narayanan_NS,Nandakumar S,[],0,0,1,1,0,Narayanan_NS
+Prabhakaran_V,Vivek,[],0,0,1,1,0,Prabhakaran_V
+Christoff_K,Kalina,[],0,0,1,1,1,Christoff_K
+Fine_EM,Eric M,[],0,0,1,1,0,Fine_EM
+Mackey_AP,Allyson P,[],0,0,1,1,4,Mackey_AP
+Miller Singley_AT,Alison T,[],0,0,1,1,3,Miller Singley_AT
+Hill_SS,Susanna S,[],0,0,1,1,0,Hill_SS
+Stone_SI,Susan I,[],0,0,1,1,0,Stone_SI
+Luerssen_A,Anna,"['attention', 'brain', 'childhood development', 'delay of gratification', 'self-control']",0,0,1,1,0,Luerssen_A
+Gyurak_A,Anett,"['attention', 'brain', 'childhood development', 'delay of gratification', 'self-control']",0,0,1,1,0,Gyurak_A
+Ayduk_O,Ozlem,"['attention', 'brain', 'childhood development', 'delay of gratification', 'self-control']",0,0,1,1,0,Ayduk_O
+Liao_IH,Isaac H,[],0,0,1,1,0,Liao_IH
+Corbett_BA,Blythe A,[],0,0,1,1,0,Corbett_BA
+Gilbert_DL,Donald L,[],0,0,1,1,0,Gilbert_DL
+Sharp_FR,Frank R,[],0,0,1,1,0,Sharp_FR
+Johnson_EG,Elliott G,"['Associative', 'Development', 'Hippocampus', 'Longitudinal', 'Memory', 'Space', 'Time', 'Volumetric']",0,0,1,1,0,Johnson_EG
+Cohen_NJ,Neal J,"['Associative', 'Development', 'Hippocampus', 'Longitudinal', 'Memory', 'Space', 'Time', 'Volumetric']",0,0,1,1,0,Cohen_NJ
+Peckham_AD,Andrew D,"['development', 'digit span', 'pupillometry', 'short-term memory', 'task-evoked pupillary response']",0,0,1,1,0,Peckham_AD
+Johnson_SL,Sheri L,"['development', 'digit span', 'pupillometry', 'short-term memory', 'task-evoked pupillary response']",0,0,1,1,0,Johnson_SL
+Hazeltine_E,Eliot,[],0,0,1,1,1,Hazeltine_E
+Scanlon_MD,Michael D,[],0,0,1,1,1,Scanlon_MD
+Guerra-Carrillo_B,Belén,[],0,0,1,1,2,Guerra-Carrillo_B
+Katovich_K,Kiefer,[],0,0,1,1,0,Katovich_K
+Guerra-Carrillo_BC,Belén C,[],0,0,1,1,0,Guerra-Carrillo_BC
+Green_CT,Chloe T,"['Children', 'Cognitive development', 'Fluid reasoning', 'Math', 'Problem solving', 'Working memory']",0,0,1,1,1,Green_CT
+Briones Chiongbian_V,Victoria,"['Children', 'Cognitive development', 'Fluid reasoning', 'Math', 'Problem solving', 'Working memory']",0,0,1,1,0,Briones Chiongbian_V
+Barrow_M,Maia,"['Children', 'Cognitive development', 'Fluid reasoning', 'Math', 'Problem solving', 'Working memory']",0,0,1,1,0,Barrow_M
+Gillath_O,Omri,[],0,0,1,1,0,Gillath_O
+Shaver_PR,Phillip R,[],0,0,1,1,0,Shaver_PR
+Mikulincer_M,Mario,[],0,0,1,1,0,Mikulincer_M
+DeMaster_DM,Dana M,[],0,0,1,1,0,DeMaster_DM
+Yonelinas_AP,Andrew P,[],0,0,1,1,0,Yonelinas_AP
+Galeano Weber_EM,Elena M,"['Visual working memory', 'encoding', 'feature binding', 'hemisphere', 'interference', 'precision']",0,0,1,1,0,Galeano Weber_EM
+Keglovits_H,Haley,"['Visual working memory', 'encoding', 'feature binding', 'hemisphere', 'interference', 'precision']",0,0,1,1,0,Keglovits_H
+Fisher_A,Arin,"['Visual working memory', 'encoding', 'feature binding', 'hemisphere', 'interference', 'precision']",0,0,1,1,0,Fisher_A
+Steele_JS,Joel S,[],0,0,1,1,0,Steele_JS
+Leckey_S,Sarah,"['Child development', 'Hippocampus', 'MVPA', 'Memory', 'Parahippocampal', 'Representation', 'Retroesplenial', 'Scene', 'fMRI']",0,0,1,1,1,Leckey_S
+Driver_CC,Charles C,"['Child development', 'Hippocampus', 'MVPA', 'Memory', 'Parahippocampal', 'Representation', 'Retroesplenial', 'Scene', 'fMRI']",0,0,1,1,0,Driver_CC
+Desautels_P,Peter,"['anterior prefrontal', 'children', 'fMRI', 'long-term memory', 'metacognition']",0,0,1,1,0,Desautels_P
+Hunter_L,Lauren,"['anterior prefrontal', 'children', 'fMRI', 'long-term memory', 'metacognition']",0,0,1,1,0,Hunter_L
+Eckstein_MK,Maria K,"['Hierarchical representation', 'Individual differences', 'Inductive reasoning', 'Pupil dilation', 'Rule inference', 'Structure learning']",0,0,1,1,1,Eckstein_MK
+Honomichl_RD,Ryan D,[],0,0,1,1,0,Honomichl_RD
+Honomichl_R,Ryan,[],0,0,1,1,0,Honomichl_R
+Donohue_S,Sarah,[],0,0,1,1,0,Donohue_S
+van der Molen_MW,Maurits W,[],0,0,1,1,2,van der Molen_MW
+Ridderinkhof_KR,K Richard,[],0,0,1,1,0,Ridderinkhof_KR
+Latenstein_H,Heleen,[],0,0,1,1,0,Latenstein_H
+de Klerk_P,Phebe,[],0,0,1,1,0,de Klerk_P
+Church_JA,Jessica A,"['adolescence', 'development', 'fMRI', 'fronto-parietal', 'task-switching']",0,0,1,1,0,Church_JA
+Petersen_SE,Steven E,"['adolescence', 'development', 'fMRI', 'fronto-parietal', 'task-switching']",0,0,1,1,0,Petersen_SE
+Schlaggar_BL,Bradley L,"['adolescence', 'development', 'fMRI', 'fronto-parietal', 'task-switching']",0,0,1,1,0,Schlaggar_BL
+Chen_SH,Stephen H,"['bilingualism', 'immigrant children', 'self-regulation']",0,0,1,1,0,Chen_SH
+Helskog_EH,Espen Hauk,[],0,0,1,1,0,Helskog_EH
+Wallis_JD,Jonathan D,[],0,0,1,1,1,Wallis_JD
+Parker_A,Amanda,[],0,0,1,1,0,Parker_A
+Brass_M,Marcel,[],0,0,1,1,0,Brass_M
+Hoshi_E,Eiji,[],0,0,1,1,0,Hoshi_E
+Sakai_K,Katsuyuki,[],0,0,1,1,0,Sakai_K
+Badre_D,David,[],0,0,1,1,0,Badre_D
+Wagner_AD,Anthony D,[],0,0,1,1,1,Wagner_AD
+Kahn_I,Itamar,[],0,0,1,1,0,Kahn_I
+Miller_EK,Earl K,[],0,0,1,1,0,Miller_EK
+Rosen_AC,Allyson C,[],0,0,1,1,0,Rosen_AC
+Thomason_ME,Moriah E,[],0,0,1,1,0,Thomason_ME
+Brod_G,Garvin,"['belief revision', 'cognitive conflict', 'executive functions', 'surprise', 'violation of expectation']",0,0,1,1,1,Brod_G
+Breitwieser_J,Jasmin,"['belief revision', 'cognitive conflict', 'executive functions', 'surprise', 'violation of expectation']",0,0,1,1,0,Breitwieser_J
+Hasselhorn_M,Marcus,"['belief revision', 'cognitive conflict', 'executive functions', 'surprise', 'violation of expectation']",0,0,1,1,0,Hasselhorn_M
+Shing_YL,Yee Lee,"['development', 'executive functions', 'open data', 'open materials', 'posterior parietal cortex', 'response inhibition', 'school enrollment']",0,0,1,1,0,Shing_YL
+Blakemore_SJ,Sarah-Jayne,[],0,0,1,1,0,Blakemore_SJ
+Blais_C,Chris,"['Categorization', 'Cognitive control', 'Context-specific congruency proportion', 'Implicit learning', 'Selective attention']",0,0,1,1,2,Blais_C
+Harris_MB,Michael B,"['Categorization', 'Cognitive control', 'Context-specific congruency proportion', 'Implicit learning', 'Selective attention']",0,0,1,1,1,Harris_MB
+Sinanian_MH,Michael H,"['Categorization', 'Cognitive control', 'Context-specific congruency proportion', 'Implicit learning', 'Selective attention']",0,0,1,1,0,Sinanian_MH
+Guerrero_JV,Jennifer V,[],0,0,1,1,0,Guerrero_JV
+Bunge_S,Silvia,[],0,0,1,1,0,Bunge_S
+Bhanji_JP,Jamil P,[],0,0,1,1,0,Bhanji_JP
+Beer_JS,Jennifer S,[],0,0,1,1,0,Beer_JS
+Baldo_JV,Juliana V,[],0,0,1,1,0,Baldo_JV
+Wilson_SM,Stephen M,[],0,0,1,1,0,Wilson_SM
+Dronkers_NF,Nina F,[],0,0,1,1,0,Dronkers_NF
+Coch_D,Donna,[],1,0,1,1,30,Coch_D
+Ansari_D,Daniel,[],0,0,1,1,1,Ansari_D
+Sanders_LD,Lisa D,[],1,0,1,1,2,Sanders_LD
+Neville_HJ,Helen J,[],1,0,1,1,4,Neville_HJ
+Mitra_P,Priya,[],1,0,1,1,6,Mitra_P
+George_E,Elyse,[],0,0,1,1,2,George_E
+Berger_N,Natalie,[],0,0,1,1,1,Berger_N
+George_EM,Elyse M,[],0,0,1,1,0,George_EM
+Hart_T,Tory,[],0,0,1,1,0,Hart_T
+Grossi_G,Giordana,[],1,0,1,1,3,Grossi_G
+Skendzel_W,Wendy,[],1,0,1,1,2,Skendzel_W
+Neville_H,Helen,[],0,0,1,1,2,Neville_H
+Bares_J,Jennifer,[],0,0,1,1,0,Bares_J
+Landers_A,Allison,[],0,0,1,1,0,Landers_A
+Meade_G,Gabriela,"['Development', 'ERPs', 'Infants/children']",1,0,1,1,1,Meade_G
+Holcomb_PJ,Phillip J,[],1,0,1,1,2,Holcomb_PJ
+Berger_NI,Natalie I,[],0,0,1,1,0,Berger_NI
+Stevens_C,Courtney,[],0,0,1,1,1,Stevens_C
+Fanning_J,Jessica,[],0,0,1,1,0,Fanning_J
+Sanders_L,Lisa,[],0,0,1,1,0,Sanders_L
+Coffey-Corina_S,S,[],0,0,1,1,0,Coffey-Corina_S
+Dholakia_A,Ayesha,"['ERPs', 'Language/speech', 'Semantic memory', 'Young adults']",1,0,1,1,0,Dholakia_A
+Benoit_C,Clarisse,[],1,0,1,1,0,Benoit_C
+Rundle_MM,Melissa M,"['Animacy', 'MVPA', 'STATIS', 'Word frequency', 'Word processing', 'fMRI']",1,0,1,1,0,Rundle_MM
+Connolly_AC,Andrew C,"['Animacy', 'MVPA', 'STATIS', 'Word frequency', 'Word processing', 'fMRI']",1,0,1,1,0,Connolly_AC
+Granger_RH,Richard H,"['Animacy', 'MVPA', 'STATIS', 'Word frequency', 'Word processing', 'fMRI']",1,0,1,1,0,Granger_RH
+Andersson_A,Annika,"['Event-related potentials', 'Nonword processing', 'Phonological awareness', 'Preschoolers', 'Rhyming effect']",1,0,1,1,0,Andersson_A
+Karns_CM,Christina M,"['Event-related potentials', 'Nonword processing', 'Phonological awareness', 'Preschoolers', 'Rhyming effect']",1,0,1,1,0,Karns_CM
+Jasinski_EC,Emily C,[],1,0,1,1,0,Jasinski_EC
+Maron_L,Leeza,[],1,0,1,1,0,Maron_L
+Wolf_M,Maryanne,[],1,0,1,1,0,Wolf_M

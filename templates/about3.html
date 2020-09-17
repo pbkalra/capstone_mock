@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-d  <head>
+<!doctype html> <html lang="en">  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
@@ -19,30 +17,25 @@ d  <head>
           <h2>Results for {{name}}</h2>
 	  <p>Your collaborator's field is {{cf}} </p>
 
+	 <form action='results'>
 
 	  <p>Your research area is {{ra}} </p>
-		<p>Which of these researchers is closest to you/your work? (start node)</p>
-		<form action='results'>
-		<input type="radio" id="R1" name="start_node" value="R1">
-		<label for="R1">{{myR1}}</label><br>
-		<input type="radio" id="R2" name="start_node" value="R2">
-		<label for="R2">{{myR2}}</label><br>
-		<input type="radio" id="R3" name="start_node" value="R3">
-		<label for="R3">{{myR3}}</label><br>
+		<p> <label for="start_node"> Which of these researchers is closest to you/your work? (start node)</label></p>
+		<select name="start_node", id="starts">
+		<option value="R1">{{myR1}}</option><br>
+		<option value="R2">{{myR2}}</option><br>
+		<option value="R3">{{myR3}}</option><br>
+</select>
 </form>
-<form>
-<p>Choose a potential collaborator</p>
-		<form action='results'>
-		<input type="radio" id="C1" name="target_node" value="C1">
-		<label for="C1">{{myC1}}</label><br>
-		<input type="radio" id="C2" name="target_node" value="C2">
-		<label for="C2">{{myC2}}</label><br>
-		<input type="radio" id="C3" name="target_node" value="C33">
-		<label for="C3">{{myC3}}</label><br>
+<form action='results'>
+<p><label for="target_node">Choose a potential collaborator</label></p>
+		<select name="target_node", id="target">
+		<option value="C1">{{myC1}}</option><br>
+		<option value="C2">{{myC2}}</option><br>
+		<option value="C3">{{myC3}}</option><br>
 
 
-
-
+</select>
 
 </form>
 		<p><a href="results">Go to results</a></p>
