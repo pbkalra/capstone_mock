@@ -71,8 +71,7 @@ def about2():
 		print('KeyError')
 		return render_template('about3.html', name = 'no name')
 	
-	if request.method=='POST':
-		app.vars['start_node'] = request.form['my_start_node']
+	
  
 	
 	
@@ -93,12 +92,13 @@ def findpath(graph, x,y):
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
 	if request.method=='POST':	
+		print(request.form.keys)
 		app.vars['start_node'] = request.form['start_node']
-		target_node = request.form['target_node']
+		app.vars['target_node'] = request.form['target_node']
 		target1 = 'Booth_JR'
-		mypath = findpath(mygraph, app.vars['my_start_node'], app.vars['target_node'])	
+		mypath = findpath(mygraph, app.vars['start_node'], app.vars['target_node'])	
 		try:
-			return render_template('results.html', out_1 = target_node, mypath = mypath, num_nodes = len(mypath))
+			return render_template('results.html', out_1 = app.vars['target_node'], mypath = mypath, num_nodes = len(mypath))
 		except KeyError:
 			return render_template('results.html', out_1 = target1, mypath = mypath, num_nodes = "Oops: key error")
 		except TypeError:
