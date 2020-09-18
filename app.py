@@ -20,23 +20,18 @@ mygraph = nx.DiGraph()
 mygraph.add_edges_from(list_of_tuples)
 
 
-@app.route('/', methods =['GET', 'POST'])
+@app.route('/')
 def index():
-	if  request.method == 'GET':
-		return render_template('info.html')
-	elif request.method == 'POST':
-		app.vars['name'] = request.form['name']
-		print(app.vars)
+	return render_template('info.html')
+	#app.vars['name'] = request.form['name_lulu']
 
-@app.route('/graph', methods = ['GET', 'POST'])
+@app.route('/graph')
 def graph():
-	if request.method=='GET':
-		return render_template('interactive_graphs.html')
+	return render_template('interactive_graphs.html')
 
-@app.route('/userinfo', methods = ['GET', 'POST'])
+@app.route('/userinfo')
 def userinfo():
-	if request.method=='GET':
-		return render_template('userinfo.html')
+	return render_template('userinfo.html')
 
 def find_authors(area, method):
     c1 = author_df[area]==0 
@@ -66,22 +61,15 @@ def about2():
 	app.vars['R2'] = source_nodes[1]
 	app.vars['R3'] = source_nodes[2]
 	try:
-		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'],  myR1=app.vars['source_nodes'][0], myR2=app.vars['source_nodes'][1], myR3=app.vars['R1'], myC1=target_nodes[0], myC2=target_nodes[1], myC3=target_nodes[2])
+		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'],  myR1=source_nodes[0], myR2=source_nodes[1], myR3=source_nodes[2], myC1=target_nodes[0], myC2=target_nodes[1], myC3=target_nodes[2])
 	except KeyError:
 		print('KeyError')
 		return render_template('about3.html', name = 'no name')
-	
-	
- 
-	
-	
 
 
 def findpath(graph, x,y):
 	try: 
         	path = nx.shortest_path(graph, source=x, target=y)
-        #print('You are connected to', y, ' within ', len(path), 'degrees')
-        #print(path)
         	return path
 	except nx.exception.NetworkXNoPath: 
 		path = 'There is no direct path--try cold calling!'
@@ -92,7 +80,7 @@ def findpath(graph, x,y):
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
 	if request.method=='POST':	
-		print(request.form.keys)
+		print(request.form.keys())
 		app.vars['start_node'] = request.form['start_node']
 		app.vars['target_node'] = request.form['target_node']
 		target1 = 'Booth_JR'
@@ -103,7 +91,7 @@ def results():
 			return render_template('results.html', out_1 = target1, mypath = mypath, num_nodes = "Oops: key error")
 		except TypeError:
 			return render_template('results.html', out_1 = target1, mypath = target, num_nodes = ("Oops: type error", source1))
-		
+
 	elif request.method=='GET':
 		return(render_template('results.html', out_1='BOOTH_JR', mypath='GET', num_nodes = 'GET'))
 
