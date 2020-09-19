@@ -15,7 +15,7 @@ list_of_tuples = list()
 for i in range(len(myedgelist)):
 	list_of_tuples.append(tuple(myedgelist[i].strip(',').split(', ')[:2]))
 
-mygraph = nx.DiGraph()
+mygraph = nx.Graph()
 mygraph.add_edges_from(list_of_tuples)
 
 
