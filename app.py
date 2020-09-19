@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, redirect
 import networkx as nx
 
@@ -6,11 +5,11 @@ app = Flask(__name__)
 
 app.vars = dict()
 import pandas as pd
-author_df = pd.read_csv('small_authors2.csv', encoding='utf-8')
+author_df = pd.read_csv('small_authorsFri2.csv', encoding='utf-8')
 #mygraph = nx.read_gml('small_authors.gml')
 #nx.read_adjlist('social_sublist.edgelist')
 #mygraph = nx.DiGraph(nx.read_edgelist('small_authors.edgelist', encoding='utf-8'))
-with open('myedgelist_lines.txt', 'r') as filehandle:
+with open('myedgelist_linesFri.txt', 'r') as filehandle:
 	myedgelist = [current_place.rstrip(', ').rstrip() for current_place in filehandle.readlines()]
 list_of_tuples = list()
 for i in range(len(myedgelist)):
@@ -33,14 +32,14 @@ def graph():
 def userinfo():
 	return render_template('userinfo.html')
 
+
 def find_authors(area, method):
-    c1 = author_df[area]==0 
-    c2 = author_df[method]==0
+    c1 = (author_df['primary_area']==area)
+    c2 = (author_df['primary_method']==method)
     out = author_df[c1 & c2]
     out2 = out.sort_values('count', ascending=False)
-    out3 = out2.keynames[:3]
-    return list(out3)
-
+    out3 = out2.index[:3]
+    return out3
 
 @app.route('/about2', methods = ['GET', 'POST'])
 def about2():
@@ -49,23 +48,45 @@ def about2():
 	app.vars['yf2'] = request.form['source_field2']
 	app.vars['cf'] = request.form['destination_field'] 
 	app.vars['ra'] = request.form['topic']
-	source_nodes = find_authors(app.vars['yf'], app.vars['yf2'])
-	target_nodes = find_authors(app.vars['cf'], app.vars['ra'])
-	if not source_nodes:
-		source_nodes = [1, 2, 3]
-	if not target_nodes:
-		target_nodes = [4,5,6]
-	app.vars['source_nodes'] = source_nodes
-	app.vars['target_nodes'] = target_nodes
-	app.vars['R1'] = source_nodes[0]
-	app.vars['R2'] = source_nodes[1]
-	app.vars['R3'] = source_nodes[2]
+	source_nodes_idx = list(find_authors(app.vars['yf'], app.vars['yf2']))
+	target_nodes_idx = list(find_authors(app.vars['cf'], app.vars['ra']))
+	if len(source_nodes_idx)==0:
+		source_nodes_idx = [1, 2, 3]
+	elif len(source_nodes_idx)<3:
+		source_nodes_idx.append(120)
+	if len(target_nodes_idx)==0:
+		target_nodes_idx = [4,5,6]
+	elif len(target_nodes_idx)<3:
+		target_nodes_idx.append(120)
+
+	app.vars['R1_name'] = (author_df.iloc[source_nodes_idx[0]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[0]]['last_name']) 
+	app.vars['R2_name'] = (author_df.iloc[source_nodes_idx[1]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[1]]['last_name'])
+	app.vars['R3_name'] = (author_df.iloc[source_nodes_idx[2]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[2]]['last_name'])
+
+	app.vars['C1_name'] = (author_df.iloc[target_nodes_idx[0]]['first_name'] + ' ' + author_df.iloc[target_nodes_idx[0]]['last_name']) 
+	app.vars['C2_name'] = (author_df.iloc[target_nodes_idx[1]]['first_name'] + ' ' + author_df.iloc[target_nodes_idx[1]]['last_name'])
+	app.vars['C3_name'] = (author_df.iloc[target_nodes_idx[2]]['first_name'] + ' ' + author_df.iloc[target_nodes_idx[2]]['last_name'])	
+
+	app.vars['R1_value'] = author_df.iloc[source_nodes_idx[0]]['dictkey'] 
+	app.vars['R2_value'] = author_df.iloc[source_nodes_idx[1]]['dictkey']
+	app.vars['R3_value'] = author_df.iloc[source_nodes_idx[2]]['dictkey']
+
+	app.vars['C1_value'] = author_df.iloc[target_nodes_idx[0]]['dictkey'] 
+	app.vars['C2_value'] = author_df.iloc[target_nodes_idx[1]]['dictkey']
+	app.vars['C3_value'] = author_df.iloc[target_nodes_idx[2]]['dictkey']
+
 	try:
-		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'],  myR1=source_nodes[0], myR2=source_nodes[1], myR3=source_nodes[2], myC1=target_nodes[0], myC2=target_nodes[1], myC3=target_nodes[2])
+		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'],  
+		myR1=app.vars['R1_name'], myR2=app.vars['R2_name'], myR3=app.vars['R3_name'], 
+		myC1=app.vars['C1_name'], myC2=app.vars['C2_name'], myC3=app.vars['C3_name'], 
+		R1value = app.vars['R1_value'], R2value = app.vars['R2_value'], R3value = app.vars['R3_value'],
+		C1value = app.vars['C1_value'], C2value = app.vars['C2_value'], C3value = app.vars['C3_value'] )		
+		print(app.vars)
+
 	except KeyError:
 		print('KeyError')
 		return render_template('about3.html', name = 'no name')
-
+		print(app.vars)
 
 def findpath(graph, x,y):
 	try: 
