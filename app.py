@@ -5,15 +5,15 @@ app = Flask(__name__)
 
 app.vars = dict()
 import pandas as pd
-author_df = pd.read_csv('small_authorsFri2.csv', encoding='utf-8')
+author_df = pd.read_csv('small_authorsFri5.csv', encoding="utf-8")
 #mygraph = nx.read_gml('small_authors.gml')
 #nx.read_adjlist('social_sublist.edgelist')
 #mygraph = nx.DiGraph(nx.read_edgelist('small_authors.edgelist', encoding='utf-8'))
-with open('myedgelist_linesFri.txt', 'r') as filehandle:
-	myedgelist = [current_place.rstrip(', ').rstrip() for current_place in filehandle.readlines()]
+with open('myedgelist_linesFri5.txt', 'r') as filehandle:
+	myedgelist = [current_place.rstrip(', ').strip() for current_place in filehandle.readlines()]
 list_of_tuples = list()
 for i in range(len(myedgelist)):
-	list_of_tuples.append(tuple(myedgelist[i].strip().split(',')[:2]))
+	list_of_tuples.append(tuple(myedgelist[i].strip(',').split(', ')[:2]))
 
 mygraph = nx.DiGraph()
 mygraph.add_edges_from(list_of_tuples)
@@ -22,16 +22,18 @@ mygraph.add_edges_from(list_of_tuples)
 @app.route('/')
 def index():
 	return render_template('info.html')
-	#app.vars['name'] = request.form['name_lulu']
+	
 
 @app.route('/graph')
 def graph():
-	return render_template('interactive_graphs.html')
+	return render_template('interactive_graphs2.html')
 
-@app.route('/userinfo')
+@app.route('/userinfo', methods = ['GET', 'POST'])
 def userinfo():
-	return render_template('userinfo.html')
-
+	if request.method=='GET':
+		return render_template('userinfo.html')
+	#elif request.method=='POST':
+	
 
 def find_authors(area, method):
     c1 = (author_df['primary_area']==area)
@@ -43,21 +45,23 @@ def find_authors(area, method):
 
 @app.route('/about2', methods = ['GET', 'POST'])
 def about2():
-	app.vars['name'] = request.form['name_lulu']
+	name = request.form['name']
 	app.vars['yf'] = request.form['source_field']
 	app.vars['yf2'] = request.form['source_field2']
 	app.vars['cf'] = request.form['destination_field'] 
 	app.vars['ra'] = request.form['topic']
+
+
 	source_nodes_idx = list(find_authors(app.vars['yf'], app.vars['yf2']))
 	target_nodes_idx = list(find_authors(app.vars['cf'], app.vars['ra']))
 	if len(source_nodes_idx)==0:
 		source_nodes_idx = [1, 2, 3]
 	elif len(source_nodes_idx)<3:
-		source_nodes_idx.append(120)
+		source_nodes_idx.extend([120, 122])
 	if len(target_nodes_idx)==0:
 		target_nodes_idx = [4,5,6]
 	elif len(target_nodes_idx)<3:
-		target_nodes_idx.append(120)
+		target_nodes_idx.extend([120, 122])
 
 	app.vars['R1_name'] = (author_df.iloc[source_nodes_idx[0]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[0]]['last_name']) 
 	app.vars['R2_name'] = (author_df.iloc[source_nodes_idx[1]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[1]]['last_name'])
@@ -76,7 +80,7 @@ def about2():
 	app.vars['C3_value'] = author_df.iloc[target_nodes_idx[2]]['dictkey']
 
 	try:
-		return render_template('about3.html', name=app.vars['name'], cf=app.vars['cf'], ra=app.vars['ra'],  
+		return render_template('about3.html', name=name, cf=app.vars['cf'], ra=app.vars['ra'],  
 		myR1=app.vars['R1_name'], myR2=app.vars['R2_name'], myR3=app.vars['R3_name'], 
 		myC1=app.vars['C1_name'], myC2=app.vars['C2_name'], myC3=app.vars['C3_name'], 
 		R1value = app.vars['R1_value'], R2value = app.vars['R2_value'], R3value = app.vars['R3_value'],
@@ -97,17 +101,18 @@ def findpath(graph, x,y):
 		return path
 
 
-
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
 	if request.method=='POST':	
-		print(request.form.keys())
-		app.vars['start_node'] = request.form['start_node']
-		app.vars['target_node'] = request.form['target_node']
+		#print(request.form.keys())
+		start_node = request.form['start_node'].encode()
+		target_node = request.form['target_node'].encode()
 		target1 = 'Booth_JR'
-		mypath = findpath(mygraph, app.vars['start_node'], app.vars['target_node'])	
+		mypath = findpath(mygraph, start_node, target_node)	
+		print(start_node, target_node, mypath)
+		print(len(mygraph.nodes))
 		try:
-			return render_template('results.html', out_1 = app.vars['target_node'], mypath = mypath, num_nodes = len(mypath))
+			return render_template('results.html', out_1 = target_node, mypath = mypath, num_nodes = len(mypath))
 		except KeyError:
 			return render_template('results.html', out_1 = target1, mypath = mypath, num_nodes = "Oops: key error")
 		except TypeError:
