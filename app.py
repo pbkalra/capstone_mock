@@ -115,7 +115,7 @@ def results():
 		mypath_raw = findpath(mygraph, start_node, target_node)	
 		mypath_finished = list()
 		for auth in mypath_raw:
-			mypath_finished.append(str(author_df.at[auth, 'first_name'] + ' ' + author_df.at[auth,'last_name']).encode() )
+			mypath_finished.append(str(author_df.at[auth, 'first_name'] + ' ' + author_df.at[auth,'last_name']) )
 
 
 		try:
