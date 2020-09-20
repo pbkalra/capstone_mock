@@ -6,6 +6,9 @@ app = Flask(__name__)
 app.vars = dict()
 import pandas as pd
 author_df = pd.read_csv('small_authorsFri5.csv', encoding="utf-8")
+author_df = author_df.set_index(['dictkey'])
+
+
 #mygraph = nx.read_gml('small_authors.gml')
 #nx.read_adjlist('social_sublist.edgelist')
 #mygraph = nx.DiGraph(nx.read_edgelist('small_authors.edgelist', encoding='utf-8'))
@@ -55,29 +58,29 @@ def about2():
 	source_nodes_idx = list(find_authors(app.vars['yf'], app.vars['yf2']))
 	target_nodes_idx = list(find_authors(app.vars['cf'], app.vars['ra']))
 	if len(source_nodes_idx)==0:
-		source_nodes_idx = [1, 2, 3]
+		source_nodes_idx = ['coch_d', 'bunge_s', 'gabrieli_j']
 	elif len(source_nodes_idx)<3:
-		source_nodes_idx.extend([120, 122])
+		source_nodes_idx.extend(['bunge_s', 'gabrieli_j'])
 	if len(target_nodes_idx)==0:
-		target_nodes_idx = [4,5,6]
+		target_nodes_idx = ['coch_d', 'bunge_s', 'gabrieli_j']
 	elif len(target_nodes_idx)<3:
-		target_nodes_idx.extend([120, 122])
+		target_nodes_idx.extend(['bunge_s', 'gabrieli_j'])
 
-	app.vars['R1_name'] = (author_df.iloc[source_nodes_idx[0]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[0]]['last_name']) 
-	app.vars['R2_name'] = (author_df.iloc[source_nodes_idx[1]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[1]]['last_name'])
-	app.vars['R3_name'] = (author_df.iloc[source_nodes_idx[2]]['first_name'] + ' ' + author_df.iloc[source_nodes_idx[2]]['last_name'])
+	app.vars['R1_name'] = (author_df.loc[source_nodes_idx[0],'first_name'] + ' ' + author_df.loc[source_nodes_idx[0],'last_name']) 
+	app.vars['R2_name'] = (author_df.loc[source_nodes_idx[1],'first_name'] + ' ' + author_df.loc[source_nodes_idx[1],'last_name'])
+	app.vars['R3_name'] = (author_df.loc[source_nodes_idx[2],'first_name'] + ' ' + author_df.loc[source_nodes_idx[2],'last_name'])
 
-	app.vars['C1_name'] = (author_df.iloc[target_nodes_idx[0]]['first_name'] + ' ' + author_df.iloc[target_nodes_idx[0]]['last_name']) 
-	app.vars['C2_name'] = (author_df.iloc[target_nodes_idx[1]]['first_name'] + ' ' + author_df.iloc[target_nodes_idx[1]]['last_name'])
-	app.vars['C3_name'] = (author_df.iloc[target_nodes_idx[2]]['first_name'] + ' ' + author_df.iloc[target_nodes_idx[2]]['last_name'])	
+	app.vars['C1_name'] = (author_df.loc[target_nodes_idx[0],'first_name'] + ' ' + author_df.loc[target_nodes_idx[0],'last_name']) 
+	app.vars['C2_name'] = (author_df.loc[target_nodes_idx[1],'first_name'] + ' ' + author_df.loc[target_nodes_idx[1],'last_name'])
+	app.vars['C3_name'] = (author_df.loc[target_nodes_idx[2],'first_name'] + ' ' + author_df.loc[target_nodes_idx[2],'last_name'])	
 
-	app.vars['R1_value'] = author_df.iloc[source_nodes_idx[0]]['dictkey'] 
-	app.vars['R2_value'] = author_df.iloc[source_nodes_idx[1]]['dictkey']
-	app.vars['R3_value'] = author_df.iloc[source_nodes_idx[2]]['dictkey']
+	app.vars['R1_value'] = source_nodes_idx[0] 
+	app.vars['R2_value'] = source_nodes_idx[1]
+	app.vars['R3_value'] = source_nodes_idx[2]
 
-	app.vars['C1_value'] = author_df.iloc[target_nodes_idx[0]]['dictkey'] 
-	app.vars['C2_value'] = author_df.iloc[target_nodes_idx[1]]['dictkey']
-	app.vars['C3_value'] = author_df.iloc[target_nodes_idx[2]]['dictkey']
+	app.vars['C1_value'] = target_nodes_idx[0]
+	app.vars['C2_value'] = target_nodes_idx[1]
+	app.vars['C3_value'] = target_nodes_idx[2]
 
 	try:
 		return render_template('about3.html', name=name, cf=app.vars['cf'], ra=app.vars['ra'],  
@@ -108,13 +111,17 @@ def results():
 		start_node = request.form['start_node'].encode()
 		target_node = request.form['target_node'].encode()
 		target1 = 'Booth_JR'
-		mypath = findpath(mygraph, start_node, target_node)	
-		print(start_node, target_node, mypath)
-		print(len(mygraph.nodes))
+		target_name = author_df.at[target_node, 'first_name'] + ' ' + author_df.at[target_node,'last_name']
+		mypath_raw = findpath(mygraph, start_node, target_node)	
+		mypath_finished = list()
+		for auth in mypath_raw:
+			mypath_finished.append(author_df.at[auth, 'first_name'] + ' ' + author_df.at[auth,'last_name'])
+
+
 		try:
-			return render_template('results.html', out_1 = target_node, mypath = mypath, num_nodes = len(mypath))
+			return render_template('results.html', out_1 = target_name, mypath = mypath_finished, num_nodes = len(mypath_raw))
 		except KeyError:
-			return render_template('results.html', out_1 = target1, mypath = mypath, num_nodes = "Oops: key error")
+			return render_template('results.html', out_1 = target1, mypath = mypath_finished, num_nodes = "Oops: key error")
 		except TypeError:
 			return render_template('results.html', out_1 = target1, mypath = target, num_nodes = ("Oops: type error", source1))
 
