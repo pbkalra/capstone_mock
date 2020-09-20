@@ -74,13 +74,13 @@ def about2():
 	app.vars['C2_name'] = (author_df.loc[target_nodes_idx[1],'first_name'] + ' ' + author_df.loc[target_nodes_idx[1],'last_name'])
 	app.vars['C3_name'] = (author_df.loc[target_nodes_idx[2],'first_name'] + ' ' + author_df.loc[target_nodes_idx[2],'last_name'])	
 
-	app.vars['R1_value'] = (source_nodes_idx[0]).decode('UTF-8') 
-	app.vars['R2_value'] = (source_nodes_idx[1]).decode('UTF-8')
-	app.vars['R3_value'] = (source_nodes_idx[2]).decode('UTF-8')
+	app.vars['R1_value'] = (source_nodes_idx[0]).encode() 
+	app.vars['R2_value'] = (source_nodes_idx[1]).encode()
+	app.vars['R3_value'] = (source_nodes_idx[2]).encode()
 
-	app.vars['C1_value'] = (target_nodes_idx[0]).decode('UTF-8')
-	app.vars['C2_value'] = (target_nodes_idx[1]).decode('UTF-8')
-	app.vars['C3_value'] = (target_nodes_idx[2]).decode('UTF-8')
+	app.vars['C1_value'] = (target_nodes_idx[0]).encode()
+	app.vars['C2_value'] = (target_nodes_idx[1]).encode()
+	app.vars['C3_value'] = (target_nodes_idx[2]).encode()
 
 	try:
 		return render_template('about3.html', name=name, cf=app.vars['cf'], ra=app.vars['ra'],  
