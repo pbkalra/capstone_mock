@@ -108,8 +108,8 @@ def findpath(graph, x,y):
 def results():
 	if request.method=='POST':	
 		#print(request.form.keys())
-		start_node = request.form['start_node'].encode('utf-8')
-		target_node = request.form['target_node'].encode('utf-8')
+		start_node = str(request.form['start_node'])
+		target_node = str(request.form['target_node'])
 		target1 = 'Booth_JR'
 		target_name = author_df.at[target_node, 'first_name'] + ' ' + author_df.at[target_node,'last_name']
 		mypath_raw = findpath(mygraph, start_node, target_node)	
