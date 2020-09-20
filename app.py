@@ -74,13 +74,13 @@ def about2():
 	app.vars['C2_name'] = (author_df.loc[target_nodes_idx[1],'first_name'] + ' ' + author_df.loc[target_nodes_idx[1],'last_name'])
 	app.vars['C3_name'] = (author_df.loc[target_nodes_idx[2],'first_name'] + ' ' + author_df.loc[target_nodes_idx[2],'last_name'])	
 
-	app.vars['R1_value'] = (source_nodes_idx[0]).decode() 
-	app.vars['R2_value'] = (source_nodes_idx[1]).decode()
-	app.vars['R3_value'] = (source_nodes_idx[2]).decode()
+	app.vars['R1_value'] = (source_nodes_idx[0]) 
+	app.vars['R2_value'] = (source_nodes_idx[1])
+	app.vars['R3_value'] = (source_nodes_idx[2])
 
-	app.vars['C1_value'] = (target_nodes_idx[0]).decode()
-	app.vars['C2_value'] = (target_nodes_idx[1]).decode()
-	app.vars['C3_value'] = (target_nodes_idx[2]).decode()
+	app.vars['C1_value'] = (target_nodes_idx[0])
+	app.vars['C2_value'] = (target_nodes_idx[1])
+	app.vars['C3_value'] = (target_nodes_idx[2])
 
 	try:
 		return render_template('about3.html', name=name, cf=app.vars['cf'], ra=app.vars['ra'],  
